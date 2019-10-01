@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="cis350.upenn.edu.easyfooddiary.SleepActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="56dp">
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/logo" />
+
+        <!--<ImageView android:src="@drawable/logo"
+           android:layout_width="55dp"
+           android:layout_height="5dp"
+           android:layout_marginBottom="24dp"
+           android:layout_gravity="center_horizontal" />-->
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.1dp"
+            android:layout_marginTop="0.1dp">
+
+            <EditText
+                android:id="@+id/sleepMonday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sleeping time Monday"
+                android:inputType="number"
+                android:textColor="@color/iron" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.1dp"
+            android:layout_marginTop="0.1dp">
+
+            <EditText
+                android:id="@+id/sleepTuesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sleeping time Tuesday"
+                android:inputType="number"
+                android:textColor="@color/iron" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.1dp"
+            android:layout_marginTop="0.1dp">
+
+            <EditText
+                android:id="@+id/sleepWednesday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sleeping time Wednesday"
+                android:inputType="number"
+                android:textColor="@color/iron" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.1dp"
+            android:layout_marginTop="0.1dp">
+
+            <EditText
+                android:id="@+id/sleepThursday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sleeping time Thursday"
+                android:inputType="number"
+                android:textColor="@color/iron" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0.1dp"
+            android:layout_marginTop="0.1dp">
+
+            <EditText
+                android:id="@+id/sleepFriday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sleeping time Friday"
+                android:inputType="number"
+                android:textColor="@color/iron" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/Save"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+
+                android:onClick="onClick3"
+                android:padding="3dp"
+                android:text="Save" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/displayLineChart"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+
+                android:layout_marginBottom="3dp"
+                android:onClick="onClick3"
+                android:padding="3dp"
+                android:text="Distribute" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

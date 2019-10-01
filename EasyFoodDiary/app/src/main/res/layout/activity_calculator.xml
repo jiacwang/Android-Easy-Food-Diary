@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cis350.upenn.edu.easyfooddiary.InformationActivity">
+    <!--android:orientation="vertical"
+    android:weightSum="1"-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!--<EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="number"
+            android:textColor="@color/iron"
+            android:text=""
+            android:hint="Calories"
+            android:id="@+id/calories"
+            android:layout_centerHorizontal="true"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/iron"
+            android:text="Calories" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <EditText android:id="@+id/calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/iron"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/pushups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iron"
+                android:text="Pushups needed:" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/running"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iron"
+                android:text="Miles to run: "/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/biking"
+                android:layout_width="wrap_content"
+                android:textColor="@color/iron"
+                android:layout_height="wrap_content"
+                android:text="Miles to bike: "/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/walking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iron"
+                android:text="Miles to walk: "/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/calculate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:onClick="onClick"
+            android:text="Calculate"/>
+
+    </LinearLayout>
+
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pushups needed: "
+        android:id="@+id/pushups"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />-->
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miles to run: "
+        android:id="@+id/running"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/pushups"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />-->
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miles to bike: "
+        android:id="@+id/biking"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/running"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />-->
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miles to walk: "
+        android:id="@+id/walking"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/biking"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />-->
+
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:text="Main"
+        android:onClick="onClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />-->
+</RelativeLayout>

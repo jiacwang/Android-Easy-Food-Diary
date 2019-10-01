@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "919551523460",
+    "firebase_url": "https://easyfooddiary-a2f2e.firebaseio.com",
+    "project_id": "easyfooddiary-a2f2e",
+    "storage_bucket": "easyfooddiary-a2f2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919551523460:android:a527e114f30bb050",
+        "android_client_info": {
+          "package_name": "cis350.upenn.edu.easyfooddiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919551523460-a34lhspk1pq3els72b5t9rip06q6sboc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cis350.upenn.edu.easyfooddiary",
+            "certificate_hash": "72563296fed871679602afc5b7e69875d1fdd35a"
+          }
+        },
+        {
+          "client_id": "919551523460-v6fej8pk5tvdtdsfl7og2uja6tkn3phi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cis350.upenn.edu.easyfooddiary",
+            "certificate_hash": "8a42ac5e883ed5233676d35027852a0d02394609"
+          }
+        },
+        {
+          "client_id": "919551523460-jg06do0qpva37q6g0btgato6t0divt6s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cis350.upenn.edu.easyfooddiary",
+            "certificate_hash": "1a03425bb680744bbcaf2921b24faffb56764593"
+          }
+        },
+        {
+          "client_id": "919551523460-fdhtutq6bua0ik0i6kvjkosev9d8p5tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5iUmeCcAoNoWfHpahMbMJvTcSjsM-7aY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919551523460-fdhtutq6bua0ik0i6kvjkosev9d8p5tu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

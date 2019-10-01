@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+
+    tools:context="cis350.upenn.edu.easyfooddiary.CaloriesActivity">
+   
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+
+        <!--<ImageView android:src="@drawable/logo"
+           android:layout_width="55dp"
+           android:layout_height="5dp"
+           android:layout_marginBottom="24dp"
+           android:layout_gravity="center_horizontal" />-->
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp">
+           <EditText android:id="@+id/caloriesMonday"
+               android:ems="10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:textColor="@color/iron"
+               android:hint="Calories Monday" />
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp">
+           <EditText android:id="@+id/caloriesTuesday"
+               android:ems="10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:textColor="@color/iron"
+               android:hint="Calories Tuesday" />
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp">
+           <EditText android:id="@+id/caloriesWednesday"
+               android:ems="10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:textColor="@color/iron"
+               android:hint="Calories Wednesday" />
+       </android.support.design.widget.TextInputLayout>
+
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp">
+           <EditText android:id="@+id/caloriesThursday"
+               android:ems="10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:textColor="@color/iron"
+               android:hint="Calories Thursday" />
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp">
+           <EditText android:id="@+id/caloriesFriday"
+               android:ems="10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:textColor="@color/iron"
+               android:hint="Calories Friday" />
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp">
+           <EditText android:id="@+id/caloriesSaturday"
+               android:ems="10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:textColor="@color/iron"
+               android:hint="Calories Saturday" />
+       </android.support.design.widget.TextInputLayout>
+
+       <android.support.design.widget.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="3dp"
+           android:layout_marginBottom="3dp">
+           <EditText android:id="@+id/caloriesSunday"
+               android:ems="10"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="number"
+               android:textColor="@color/iron"
+               android:hint="Calories Sunday" />
+       </android.support.design.widget.TextInputLayout>
+
+
+
+   <!-- <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/carbs"
+            android:ems="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/iron"
+            android:hint="% of Carbohydrates"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <EditText android:id="@+id/protein"
+            android:ems="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/iron"
+            android:hint="% of Protein"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+        <EditText android:id="@+id/fat"
+            android:ems="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/iron"
+            android:hint="% of Fat"/>
+    </android.support.design.widget.TextInputLayout>-->
+
+
+     <RelativeLayout
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation = "horizontal">
+         <android.support.v7.widget.AppCompatButton
+             android:id="@+id/Save"
+             android:layout_width="105dp"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="3dp"
+
+             android:padding="3dp"
+             android:onClick="onClick"
+             android:text="Save"/>
+
+         <android.support.v7.widget.AppCompatButton
+             android:id="@+id/displayLineChart"
+             android:layout_width="105dp"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="3dp"
+
+             android:padding="3dp"
+             android:onClick="onClick"
+             android:text="Distribute"
+             android:layout_alignParentRight="true"/>
+     </RelativeLayout>
+
+
+
+
+ </LinearLayout>
+
+ <!--<EditText
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:inputType="number"
+     android:text=""
+     android:ems="10"
+     android:id="@+id/calories"
+     android:layout_below="@+id/breakfast"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true"
+     android:hint="Calories per day"
+     android:layout_marginTop="13dp" />
+
+ <EditText
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:inputType="number"
+     android:ems="10"
+     android:id="@+id/carbs"
+     android:text=""
+     android:hint="% of Carbohydrates"
+     android:layout_below="@+id/calories"
+     android:layout_alignParentStart="true"
+     android:layout_marginTop="10dp" />
+
+ <EditText
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:inputType="number"
+     android:ems="10"
+     android:id="@+id/protein"
+     android:text=""
+     android:hint="% of Protein"
+     android:layout_below="@+id/carbs"
+     android:layout_alignParentStart="true"
+     android:layout_marginTop="10dp" />
+
+ <EditText
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:inputType="number"
+     android:ems="10"
+     android:id="@+id/fat"
+     android:text=""
+     android:hint="% of Fat"
+     android:layout_below="@+id/protein"
+     android:layout_alignParentStart="true"
+     android:layout_marginTop="11dp" />
+
+ <Button
+     android:text="Save"
+     android:layout_width="145dp"
+     android:layout_height="wrap_content"
+     android:id="@+id/Save"
+     android:onClick="onClick"
+     android:layout_marginRight="13dp"
+     android:layout_centerVertical="true"
+     android:layout_toEndOf="@+id/fat" />-->
+
+    <!-- <Button
+         android:text="Macro Goals"
+         android:layout_width="145dp"
+         android:layout_height="wrap_content"
+         android:id="@+id/macrogoals"
+         android:onClick="onClick"
+         android:layout_marginRight="13dp"
+         android:layout_below="@+id/Save"
+         android:layout_alignStart="@+id/Save" />-->
+
+    <!--<Button
+        android:text="Display Macro Goals Distribution"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/displayPiChart"
+        android:onClick="onClick"
+        android:layout_marginRight="13dp"
+        android:layout_below="@+id/macrogoals"
+        android:layout_alignStart="@+id/Save" />-->
+
+
+</RelativeLayout>

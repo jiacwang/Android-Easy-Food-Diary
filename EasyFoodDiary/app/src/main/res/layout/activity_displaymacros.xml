@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cis350.upenn.edu.easyfooddiary.MacrosActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iron"
+                android:text="Title" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/carbs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/iron"
+                android:text="Carbs" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/protein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/iron"
+                android:text="Protein" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/fat"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iron"
+                android:text="Fat" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:text="Main"
+        android:onClick="onClick"
+        android:layout_below="@+id/fat"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="59dp" />-->
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="cis350.upenn.edu.easyfooddiary.InformationActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iron"
+                android:text=" Less than 15 	Very severely underweight\n
+Between 15 and 16 	Severely underweight\n
+Between 16 and 18.5 	Underweight\n
+Between 18.5 and 25 	Normal (healthy weight)\n
+Between 25 and 30 	Overweight\n
+Between 30 and 35 	Moderately obese\n
+Between 35 and 40 	Severely obese\n
+Over 40 	Very severely obese"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <TextView android:id="@+id/bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/iron"
+                android:text=" BMI: "/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/iron"
+                android:hint="Height (inches)"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/iron"
+                android:hint="Weight (lbs)"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/calculate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:onClick="onClick"
+            android:text="Calculate"/>
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI: "
+        android:id="@+id/bmi"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/weight"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />-->
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Less than 15 	Very severely underweight\n
+Between 15 and 16 	Severely underweight\n
+Between 16 and 18.5 	Underweight\n
+Between 18.5 and 25 	Normal (healthy weight)\n
+Between 25 and 30 	Overweight\n
+Between 30 and 35 	Moderately obese\n
+Between 35 and 40 	Severely obese\n
+Over 40 	Very severely obese"
+        android:id="@+id/table"
+        android:layout_marginTop="56dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/calculate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />-->
+    <!--<EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text=""
+        android:hint="Height (inches)"
+        android:id="@+id/height"
+        android:layout_centerHorizontal="true"/>-->
+    <!--<EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text=""
+        android:hint="Weight (lbs)"
+        android:id="@+id/weight"
+        android:layout_below="@+id/height"
+        android:layout_centerHorizontal="true"/>-->
+
+    <!--Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:text="Main"
+        android:onClick="onClick"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />-->
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calculate"
+        android:text="Calculate"
+        android:onClick="onClick"
+        android:layout_below="@+id/bmi"
+        android:layout_marginTop="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />-->
+
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Easy Food Diary</string>
+    <string name="title_activity_information">InformationActivity</string>
+</resources>

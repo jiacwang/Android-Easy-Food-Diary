@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    tools:context="cis350.upenn.edu.easyfooddiary.InformationActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/weight"
+                android:ems="10"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/iron"
+                android:hint="Weight (in lbs)" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/lunch"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:ems="7"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/iron"
+                    android:inputType="textLongMessage"
+                    android:hint="Lunch"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+                android:layout_alignParentRight="true">
+            <EditText android:id="@+id/breakfast"
+                android:layout_width="wrap_content"
+                android:text=""
+                android:textColor="@color/iron"
+                android:ems="7"
+                android:layout_height="wrap_content"
+                android:inputType="textLongMessage"
+                android:hint="Breakfast"/>
+        </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/dinner"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="textLongMessage"
+                    android:hint="Dinner"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentRight="true">
+                <EditText android:id="@+id/snack1"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="textLongMessage"
+                    android:hint="Snack"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/snack2"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="textLongMessage"
+                    android:hint="Snack"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentRight="true">
+                <EditText android:id="@+id/snack3"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="textLongMessage"
+                    android:hint="Snack"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/dinnerCalories"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Calories"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentRight="true">
+                <EditText android:id="@+id/breakfastCalories"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Calories"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/lunchCalories"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Calories"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentRight="true">
+                <EditText android:id="@+id/snack1Calories"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Calories"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/snack2Calories"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Calories"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_alignParentRight="true">
+                <EditText android:id="@+id/snack3Calories"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:ems="7"
+                    android:textColor="@color/iron"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Calories"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/Save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:padding="12dp"
+            android:onClick="onClick"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
